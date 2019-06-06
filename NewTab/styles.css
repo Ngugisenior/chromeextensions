@@ -1,0 +1,77 @@
+*{
+	border-radius: .5em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+body{
+	color: green;
+	width: 1000px;
+	font-family: fantasy;
+	background-image: url(img/backg.jpg);
+	font-family: fantasy;
+}
+#container{
+	position: center;
+	color: azure;
+	background-color: dodgerblue;
+	position: center;
+	line-height: calc(1.1em + 0.5vw);
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border-style: groove;
+	border-width: 3px;
+	font-size: 28px;
+	
+	display: flex;
+}
+#leftdiv{
+	padding-left: 2px;
+	background-color: slateblue;
+	width: 300px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#centerdiv{
+	padding-left: 2px;
+	background-color: slateblue;
+	width: 300px;
+	margin-right: 10px;
+}
+#rightdiv{
+	padding-left: 2px;
+	background-color: slateblue;
+	width: 300px;
+	margin-right: 10px;
+}
+#container #leftdiv ul{
+	list-style: none;
+}
+#container #rightdiv ul{
+	list-style: none;
+}
+#container #centerdiv ul{
+	list-style: none;
+}
+#container #leftdiv ul li a{
+	text-decoration: none;
+}
+#container #rightdiv ul li a{
+	text-decoration: none;
+}
+#container #centerdiv ul li a{
+	text-decoration: none;
+}
+#container #centerdiv ul li a:hover{
+	color: orange;
+	font-family: fantasy;
+	font-style: oblique;
+	font-size: 35px;
+}
+#container #leftdiv ul li a:hover{
+	color: orange;
+	font-family: fantasy;
+	font-style: oblique;
+	font-size: 35px;
+}
