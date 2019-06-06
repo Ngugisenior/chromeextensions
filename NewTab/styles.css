@@ -1,83 +1,232 @@
 @keyframes fadein{
 	from{opacity:0} to{opacity:1}
 }
+/* Zoom in Keyframes */
+@-webkit-keyframes zoomin {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1);}
+}
+@keyframes zoomin {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1);}
+} /*End of Zoom in Keyframes */
+
+/* Zoom out Keyframes */
+@-webkit-keyframes zoomout {
+  0% {transform: scale(1);}
+  50% {transform: scale(0.67);}
+  100% {transform: scale(1);}
+}
+@keyframes zoomout {
+    0% {transform: scale(1);}
+  50% {transform: scale(0.67);}
+  100% {transform: scale(1);}
+}/*End of Zoom out Keyframes */ 
 *{
 	border-radius: .5em;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-bottom: 20px;
+
 }
 body{
+	padding-top: 10px;
 	margin-right: auto;
 	margin-left: auto;
-	animation:fadein 3s;
-	color: green;
-	width: 1000px;
+	color: dodgerblue;
+	width: 1200px;
 	font-family: fantasy;
-	background-image: url(img/backg.jpg);
+	background-image: url("img/pics.jpg");
+	background-blend-mode: darken;
+	background-attachment: fixed;
 	font-family: fantasy;
-}
-#container{
-	color: azure;
-	background-color: dodgerblue;
-	position: center;
-	line-height: calc(1.1em + 0.5vw);
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	text-align: center;
+	border-radius: 20px;
 	border-style: groove;
-	border-width: 3px;
-	font-size: 28px;
+}
+
+#header-wrapper{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	animation:fadein 3s;
+	overflow: hidden;
+	text-align: center;
+	font-family: fantasy;
+	font-style: oblique;
+	font-weight: bolder;
+	font-size: 3em;
+	border-style: ridge;
+	border-radius: .5em;
+	height: 50px;
+	width: 1000px;
+}
+#zoominheader{
+	padding-top: 0px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: center;
+	background-image: url("img/lexus.jpg");
+	background-size: auto;
+	background-attachment: fixed;
+	background-repeat: repeat;
+	position: relative;
+	-webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-animation: zoomin 10s ease-in infinite;
+  animation: zoomin 10s ease-in infinite;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+  height: 50px;
+  width: 1000px;
+}
+#zoomoutheader {
+	padding-top: 20px;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background: none;
+	-webkit-animation: zoomout 10s ease-in infinite;
+	animation: zoomout 10s ease-in infinite;
+	transition: all .5s ease-in-out;
+	overflow: hidden;
+}
+#spacing{
+	width: 1000px;
+	height: 70px;
+	background:none;
+	margin-left: auto;
+	margin-right: auto;
+}
+#spacing ul{
+	list-style: none;
 	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+#spacing ul li a{
+	margin-left: auto;
+	margin-right: auto;
+	font-size:30px;
+	font-family: fantasy;
+	padding-left: 20px;
+	color: orange;
+	text-decoration: none;
+}
+#spacing ul li a:hover{
+	color: darkgray;
+	display:block;
+}
+#dropdown{
+	position: relative;
+    display: inline-block;
+}
+#dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+#dropdown-content  a{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+#dropdown-content a:hover{
+	background-color: darkgray;
+}
+#dropdown:hover #dropdown-content{
+	display: block;
+}
+
+#container{
+	width: 1000px;
+	padding-top: 10px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url("img/pixar.jpg");
+	background-blend-mode: darken;
+	background-attachment: fixed;
+	display: flex;
+	border-radius: 20px;
+
 }
 #leftdiv{
-	padding-left: 2px;
-	background-color: slateblue;
-	width: 300px;
+	width:200px;
+	background: none;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: left;
+	color:azure;
+    -webkit-transition: width 2s;
 }
 #centerdiv{
-	padding-left: 2px;
-	background-color: slateblue;
-	width: 300px;
-	margin-right: auto;
+	width:300px;
+	border-radius: 20px;
 	margin-left: auto;
+	margin-right: auto;
+	background-color: dodgerblue;
 }
 #rightdiv{
-	padding-left: 2px;
-	background-color: slateblue;
+	border-radius: 20px;
 	width: 300px;
-	margin-right: auto;
 	margin-left: auto;
+	margin-right: auto;
+	background-color: slateblue;
+}
+#container h1{
+	text-align: center;
+	letter-spacing: 2px;
+	text-shadow: 5px 2px darkblue;
+	font-size: 30px;
+	font-family: fantasy;
+	font-style: oblique;
 }
 #container #leftdiv ul{
 	list-style: none;
 }
-#container #rightdiv ul{
-	list-style: none;
-}
-#container #centerdiv ul{
-	list-style: none;
-}
 #container #leftdiv ul li a{
+	color: azure;
 	text-decoration: none;
-}
-#container #rightdiv ul li a{
-	text-decoration: none;
-}
-#container #centerdiv ul li a{
-	text-decoration: none;
-}
-#container #centerdiv ul li a:hover{
-	color: orange;
-	font-family: fantasy;
-	font-style: oblique;
-	font-size: 35px;
 }
 #container #leftdiv ul li a:hover{
-	color: orange;
+
 	font-family: fantasy;
-	font-style: oblique;
-	font-size: 35px;
+	font-style: italic;
+	color: orange;
+	text-transform: uppercase;
+}
+#article{
+	height: 300px;
+	width: 1000px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: ridge;
+}
+#article h1{
+	color: dodgerblue;
+
+}
+#footer{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	height: 200px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	border-style: ridge;
+	border-color: darkgrey;
 }

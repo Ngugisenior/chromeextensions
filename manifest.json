@@ -1,7 +1,20 @@
 {
 	"name": "New Tab",
 	"description": "My own new tab page",
-	"version": "1.0",
-	"chrome_url_overrides":{"newtab": "index.html"},
+	"version": "2.0",
+	"chrome_url_overrides":{
+		"newtab": "index.html"
+     },
+
+	"chrome_settings_overrides": {
+		"homepage": "https://newtabb.netlify.com",
+		"search_provider":{
+			"name":"netlify.com",
+			"keyword":"newtabb.netifly.com",
+			"search_url":"https://newtabb.netifly.com",
+
+		}
+
+	},
 	"manifest_version":2
 }
