@@ -1,9 +1,15 @@
+@keyframes fadein{
+	from{opacity:0} to{opacity:1}
+}
 *{
 	border-radius: .5em;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
 body{
+	margin-right: auto;
+	margin-left: auto;
+	animation:fadein 3s;
 	color: green;
 	width: 1000px;
 	font-family: fantasy;
@@ -11,39 +17,39 @@ body{
 	font-family: fantasy;
 }
 #container{
-	position: center;
 	color: azure;
 	background-color: dodgerblue;
 	position: center;
 	line-height: calc(1.1em + 0.5vw);
-	margin-right: 40px;
-	margin-left: 40px;
+	margin-right: auto;
+	margin-left: auto;
 	margin-top: 40px;
 	margin-bottom: 40px;
 	border-style: groove;
 	border-width: 3px;
 	font-size: 28px;
-	
 	display: flex;
 }
 #leftdiv{
 	padding-left: 2px;
 	background-color: slateblue;
 	width: 300px;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
 }
 #centerdiv{
 	padding-left: 2px;
 	background-color: slateblue;
 	width: 300px;
-	margin-right: 10px;
+	margin-right: auto;
+	margin-left: auto;
 }
 #rightdiv{
 	padding-left: 2px;
 	background-color: slateblue;
 	width: 300px;
-	margin-right: 10px;
+	margin-right: auto;
+	margin-left: auto;
 }
 #container #leftdiv ul{
 	list-style: none;
